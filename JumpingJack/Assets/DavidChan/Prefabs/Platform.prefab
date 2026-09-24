@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3898893171262329486}
   - component: {fileID: 3899575980908440257}
   - component: {fileID: 8607646829384806573}
+  - component: {fileID: 5000448813041002926}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Untagged
@@ -135,3 +136,16 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &5000448813041002926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510695577079718489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a81fae93f4746a4689f724beaa08115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlatfomMovement
+  velocidad: 3
