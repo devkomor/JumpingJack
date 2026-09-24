@@ -7,9 +7,9 @@ public class PlatformPool : MonoBehaviour
     [SerializeField] private int _poolSize = 4;
     [SerializeField] private List<GameObject> _platformList;
 
-    private float LevelWidth = 3f;
+    private float LevelWidth = 3.5f;
     private float _minY = 0.2f;
-    private float _maxY = 1.5f;
+    private float _maxY = 3f;
 
     private static PlatformPool instance;
     public static PlatformPool Instance { get { return instance; } }
