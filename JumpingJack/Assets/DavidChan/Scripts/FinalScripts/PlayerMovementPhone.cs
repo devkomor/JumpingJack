@@ -16,7 +16,6 @@ public class PlayerMovementPhone : MonoBehaviour
     private float _horizontal;
     private float _halfWidth;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -25,30 +24,24 @@ public class PlayerMovementPhone : MonoBehaviour
 
     void OnEnable()
     {
-        if(Accelerometer.current != null)
+        #if UNITY_ANDROID || UNITY_IOS
+        if (Accelerometer.current != null)
         {
             InputSystem.EnableDevice(Accelerometer.current);
         }
+        #endif
     }
 
     void Update()
     {
+        //https://docs.unity3d.com/520/Documentation/Manual/PlatformDependentCompilation.html
         float target = 0f;
-        if(Accelerometer.current != null)
-        {
-            target = Accelerometer.current.acceleration.ReadValue().x;
-        }
-        else if (Keyboard.current != null)
-        {
-            if (Keyboard.current.leftArrowKey.isPressed)
-            {
-                target = -1f;
-            }
-            else if (Keyboard.current.rightArrowKey.isPressed)
-            {
-                target = 1f;
-            }
-        }
+#if UNITY_ANDROID || UNITY_IOS
+        target = ReadAccelerometerInput();
+#endif
+#if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN
+        target = ReadKeyboardInput();
+#endif
         Move(target);
 
         if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) Shoot();
@@ -59,12 +52,42 @@ public class PlayerMovementPhone : MonoBehaviour
         CheckVerticalBounds();
     }
 
+    private float ReadKeyboardInput()
+    {
+        if (Keyboard.current != null)
+        {
+            if (Keyboard.current.leftArrowKey.isPressed)
+            {
+                return -1f;
+            }
+            else if (Keyboard.current.rightArrowKey.isPressed)
+            {
+                return 1f;
+            }
+        }
+
+        return 0;
+    }
+
     void FixedUpdate()
     {
         _rigidbody.linearVelocity = new Vector2(_horizontal * _tiltSpeed, _rigidbody.linearVelocity.y);
     }
 
     // METODOS
+
+    private float ReadAccelerometerInput()
+    {
+        
+        if (Accelerometer.current != null)
+        {
+            return Accelerometer.current.acceleration.ReadValue().x;
+        }
+        else
+        {
+            return 0;
+        }
+    }
 
     private void Move(float input)
     {
@@ -79,7 +102,7 @@ public class PlayerMovementPhone : MonoBehaviour
 
     private void Shoot()
     {
-        //Instancia de la clase Bullet segun el fireRate
+        //TODO Instancia de la clase Bullet segun el fireRate
         Debug.Log("Mueran malditos comunistas!!!!");
     }
 
@@ -87,6 +110,7 @@ public class PlayerMovementPhone : MonoBehaviour
     {
         if (_savePlatformsLeft > 0)
         {
+            //TODO Spawnear plataforma 
             _savePlatformsLeft--;
 
             Debug.Log("Plataforma creada");

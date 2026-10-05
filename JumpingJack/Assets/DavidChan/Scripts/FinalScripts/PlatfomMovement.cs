@@ -9,10 +9,13 @@ public class PlatfomMovement : Platform
     [Header("Limites de pantalla")]
     [SerializeField] private float _lowerLimit = -6f;
 
-    private void Update()
+    private void FixedUpdate()
     {
         Move();
-        CheckBounds();
+    }
+    private void Update()
+    {
+            CheckBounds();
     }
 
     // METODOS
