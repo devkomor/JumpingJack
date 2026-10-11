@@ -1,3 +1,5 @@
+// Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -9,7 +11,7 @@ public class PlayerMovementPhone : MonoBehaviour
     [SerializeField] private float _fireRate = 0.5f;
     [SerializeField] private float _jumpVelocity = 12f;
     [SerializeField] private float _tiltSpeed = 12f;
-    [SerializeField] private float _smoothing = 10f;
+    [SerializeField] private float _smoothing = 10f; // Aclarar el significado o las unidades con Tooltip
     [SerializeField] private float _topLimit = 5f;
     [SerializeField] private float _bottomLimit = -5f;
     private Rigidbody2D _rigidbody;
@@ -44,8 +46,8 @@ public class PlayerMovementPhone : MonoBehaviour
 #endif
         Move(target);
 
-        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) Shoot();
-        if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame) TrySpawnSavePlatform();
+        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) Shoot(); // Agregar llaves al if
+        if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame) TrySpawnSavePlatform(); // Agregar llaves al if
 
         WrapAroundScreen();
 
@@ -54,7 +56,7 @@ public class PlayerMovementPhone : MonoBehaviour
 
     private float ReadKeyboardInput()
     {
-        if (Keyboard.current != null)
+        if (Keyboard.current != null) // Revisar si se puede usar retorno temprano
         {
             if (Keyboard.current.leftArrowKey.isPressed)
             {
@@ -69,7 +71,7 @@ public class PlayerMovementPhone : MonoBehaviour
         return 0;
     }
 
-    void FixedUpdate()
+    void FixedUpdate() // Respetar el orden de los miembros
     {
         _rigidbody.linearVelocity = new Vector2(_horizontal * _tiltSpeed, _rigidbody.linearVelocity.y);
     }
@@ -94,19 +96,19 @@ public class PlayerMovementPhone : MonoBehaviour
         _horizontal = Mathf.Lerp(_horizontal, input, Time.deltaTime * _smoothing);
     }
 
-    public void Jump(float customForce = 0f)
+    public void Jump(float customForce = 0f) // Respetar el orden de acceso y static
     {
         float forceToApply = customForce > 0f ? customForce : _jumpVelocity;
         _rigidbody.linearVelocity = new Vector2(_rigidbody.linearVelocity.x, forceToApply);
     }
 
-    private void Shoot()
+    private void Shoot() // Revisar si este código es necesario
     {
         //TODO Instancia de la clase Bullet segun el fireRate
         Debug.Log("Mueran malditos comunistas!!!!");
     }
 
-    private void TrySpawnSavePlatform()
+    private void TrySpawnSavePlatform() // El método debe hacer lo que indica su nombre
     {
         if (_savePlatformsLeft > 0)
         {
@@ -117,7 +119,7 @@ public class PlayerMovementPhone : MonoBehaviour
         }
     }
 
-    public void ApplyPowerUp(PowerUp powerUp)
+    public void ApplyPowerUp(PowerUp powerUp) // Respetar el orden de acceso y static
     {
         powerUp.ApplyEffect(this);
     }
@@ -127,9 +129,9 @@ public class PlayerMovementPhone : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision) // Respetar el orden de los miembros
     {
-        if (_rigidbody.linearVelocity.y <= 0.01f)
+        if (_rigidbody.linearVelocity.y <= 0.01f) // Revisar si se puede usar retorno temprano
         {
             Platform platform = collision.gameObject.GetComponent<Platform>();
             if (platform != null)
@@ -141,9 +143,9 @@ public class PlayerMovementPhone : MonoBehaviour
 
     private void WrapAroundScreen()
     {
-        var cam = Camera.main; 
+        var cam = Camera.main; // Usar el tipo explícito en lugar de var; Sin abreviaciones
         float camHalfWidth = cam.orthographicSize * cam.aspect;
-        float x = transform.position.x;
+        float x = transform.position.x; // Usar un nombre descriptivo
 
         if (x > camHalfWidth + _halfWidth)
         {
@@ -155,7 +157,7 @@ public class PlayerMovementPhone : MonoBehaviour
         }
         transform.position = new Vector3(x, transform.position.y, transform.position.z);
     }
-    private void CheckVerticalBounds()
+    private void CheckVerticalBounds() // Revisar si se puede usar retorno temprano
     {
         if (transform.position.y > _topLimit)
         {
