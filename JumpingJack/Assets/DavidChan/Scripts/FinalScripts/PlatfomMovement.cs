@@ -11,6 +11,13 @@ public class PlatfomMovement : Platform // Corregir la ortografía del nombre
     [Header("Limites de pantalla")]
     [SerializeField] private float _lowerLimit = -6f;
 
+    private PlatformPool _pool;
+
+    public void SetPool(PlatformPool pool)
+    {
+        _pool = pool;
+    }
+
     private void FixedUpdate()
     {
         Move();
@@ -38,7 +45,7 @@ public class PlatfomMovement : Platform // Corregir la ortografía del nombre
     {
         if (transform.position.y < _lowerLimit)
         {
-            RecycleToPool();
+            RecycleToPool(_pool);
         }
     }
 }
