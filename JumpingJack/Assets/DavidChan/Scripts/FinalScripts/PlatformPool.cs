@@ -1,5 +1,3 @@
-// Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
-
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,40 +7,31 @@ public class PlatformPool : MonoBehaviour
     [SerializeField] private int _poolSize = 12;
     [SerializeField] private List<Platform> _platformList = new List<Platform>();
 
-    [SerializeField] private float LevelWidth = 3.5f; // Usar _camelCase
+    [SerializeField] private float _levelWidth = 3.5f; 
     [SerializeField] private float _minY = 0.2f;
     [SerializeField] private float _maxY = 3f;
 
-    private static PlatformPool instance; // Usar _camelCase; Respetar el orden de acceso y static
-    public static PlatformPool Instance { get { return instance; } }
+    private static PlatformPool _instance; 
+    public static PlatformPool Instance { get { return _instance; } }
+    private float InitialSpawnY = -4.2f;
 
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        if (_instance == null){_instance = this;} else { Destroy(gameObject); }
     }
     void Start()
     {
-        Vector3 spawnPosition = new Vector3(0f, -4.2f, 0f); // Revisar: usar una constante o configuración con nombre
+        Vector3 spawnPosition = new Vector3(0f, InitialSpawnY, 0f); 
         for (int i = 0; i < _poolSize; i++)
         {
             GameObject platform = Instantiate(_platformPrefab, spawnPosition, Quaternion.identity);
             platform.SetActive(true);
             
             Platform platformComponent = platform.GetComponent<Platform>();
-            if (platformComponent != null)
-            {
-                _platformList.Add(platformComponent);
-            }
+            if (platformComponent != null){ _platformList.Add(platformComponent); }
 
             spawnPosition.y += Random.Range(_minY, _maxY);
-            spawnPosition.x = Random.Range(-LevelWidth, LevelWidth);
+            spawnPosition.x = Random.Range(-_levelWidth, _levelWidth);
 
         }
     }
@@ -53,7 +42,7 @@ public class PlatformPool : MonoBehaviour
     {
         float highestY = GetHighestPlatformY();
 
-        Vector3 newPosition = new Vector3(Random.Range(-LevelWidth, LevelWidth), highestY + Random.Range(_minY, _maxY),0f );
+        Vector3 newPosition = new Vector3(Random.Range(-_levelWidth, _levelWidth), highestY + Random.Range(_minY, _maxY),0f );
     
         platformToRecycle.transform.position = newPosition;
     }
@@ -61,12 +50,9 @@ public class PlatformPool : MonoBehaviour
     private float GetHighestPlatformY()
     {
         float highestY = 0f;
-        foreach (Platform plat in _platformList) // Sin abreviaciones
+        foreach (Platform platform in _platformList) 
         {
-            if (plat.transform.position.y > highestY)
-            {
-                highestY = plat.transform.position.y;
-            }
+            if (platform.transform.position.y > highestY){ highestY = platform.transform.position.y; }
         }
         return highestY;
     }

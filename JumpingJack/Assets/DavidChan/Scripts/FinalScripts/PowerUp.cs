@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class PowerUp : MonoBehaviour
 {
-    [SerializeField] protected float duration = 5f; // Usar _camelCase; 
+    [SerializeField] protected float _duration = 5f; 
 
+    //funcion pendiente hasata tener power up
     public virtual void ApplyEffect(PlayerMovementPhone player)
     {
-        // Logica del objeto 
+
     }
 
     protected void DestroyAfterCollect()
