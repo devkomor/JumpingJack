@@ -1,6 +1,8 @@
+// Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
+
 using UnityEngine;
 
-public class PlatfomMovement : Platform
+public class PlatfomMovement : Platform // Corregir la ortografía del nombre
 {
     [SerializeField] private float _moveSpeed = 3f;
     [SerializeField] private bool _isMovingHorizontal = false;
@@ -28,13 +30,13 @@ public class PlatfomMovement : Platform
         }
         if (_isMovingHorizontal)
         {
-            //Agregar logica de movimiento Izquierda y Derecha
+            //Agregar logica de movimiento Izquierda y Derecha // Revisar si este código es necesario
         }
     }
 
     private void CheckBounds()
     {
-        if(transform.position.y < _lowerLimit)
+        if (transform.position.y < _lowerLimit)
         {
             RecycleToPool();
         }

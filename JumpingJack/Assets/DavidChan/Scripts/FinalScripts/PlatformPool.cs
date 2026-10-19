@@ -1,3 +1,5 @@
+// Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
+
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,16 +9,16 @@ public class PlatformPool : MonoBehaviour
     [SerializeField] private int _poolSize = 12;
     [SerializeField] private List<Platform> _platformList = new List<Platform>();
 
-    [SerializeField] private float LevelWidth = 3.5f;
+    [SerializeField] private float LevelWidth = 3.5f; // Usar _camelCase
     [SerializeField] private float _minY = 0.2f;
     [SerializeField] private float _maxY = 3f;
 
-    private static PlatformPool instance;
+    private static PlatformPool instance; // Usar _camelCase; Respetar el orden de acceso y static
     public static PlatformPool Instance { get { return instance; } }
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
         }
@@ -27,8 +29,8 @@ public class PlatformPool : MonoBehaviour
     }
     void Start()
     {
-        Vector3 spawnPosition = new Vector3(0f, -4.2f, 0f);
-        for(int i = 0; i < _poolSize; i++)
+        Vector3 spawnPosition = new Vector3(0f, -4.2f, 0f); // Revisar: usar una constante o configuración con nombre
+        for (int i = 0; i < _poolSize; i++)
         {
             GameObject platform = Instantiate(_platformPrefab, spawnPosition, Quaternion.identity);
             platform.SetActive(true);
@@ -59,7 +61,7 @@ public class PlatformPool : MonoBehaviour
     private float GetHighestPlatformY()
     {
         float highestY = 0f;
-        foreach (Platform plat in _platformList)
+        foreach (Platform plat in _platformList) // Sin abreviaciones
         {
             if (plat.transform.position.y > highestY)
             {
