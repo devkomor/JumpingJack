@@ -3,13 +3,13 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform target;
+    public Transform target; // Usar PascalCase
 
     void LateUpdate ()
     {
-        if(target.position.y > transform.position.y)
+        if (target.position.y > transform.position.y)
         {
-            Vector3 newPos = new Vector3(transform.position.x, target.position.y, transform.position.z);
+            Vector3 newPos = new Vector3(transform.position.x, target.position.y, transform.position.z); // Sin abreviaciones
             transform.position = newPos;
         }    
     }
