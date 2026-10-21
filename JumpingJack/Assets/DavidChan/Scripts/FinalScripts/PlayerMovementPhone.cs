@@ -51,10 +51,6 @@ public class PlayerMovementPhone : MonoBehaviour
 #endif
         Move(target);
 
-        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) 
-        {
-            Shoot();
-        }
         if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame) 
         { 
             TrySpawnSavePlatform(); 
