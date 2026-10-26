@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class PlatformBounce : MonoBehaviour
 {
-    public float jumpForce = 10f;
+    public float jumpForce = 10f; // Usar PascalCase
     void OnCollisionEnter2D(Collision2D collision)
     {
        Rigidbody2D rigidbody = collision.collider.GetComponent<Rigidbody2D>();
