@@ -45,7 +45,6 @@ public class EnemyPool : MonoBehaviour
     }
 
     //Metodos
-
     public void RecycleEnemy(EnemyBehaviour enemyToRecycle)
     {
         float highestY = GetHighestEnemyY();

@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class StaticEnemy : MonoBehaviour
 {
+    public bool _isAlive;
+
     void Start()
     {
         
@@ -11,6 +13,11 @@ public class StaticEnemy : MonoBehaviour
     void Update()
     {
         
+    }
+    public void DestroyEnemy()
+    {
+        _isAlive = false;
+        gameObject.SetActive(false);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

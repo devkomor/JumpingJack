@@ -155,3 +155,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d395931794cfb946abaf2eb48286855, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StaticEnemy
+  _isAlive: 1
