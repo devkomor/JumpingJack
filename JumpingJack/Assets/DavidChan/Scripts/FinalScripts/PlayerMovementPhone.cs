@@ -15,6 +15,8 @@ public class PlayerMovementPhone : MonoBehaviour
     [SerializeField] private float _smoothing = 10f; // Aclarar el significado o las unidades con Tooltip
     [SerializeField] private float _topLimit = 5f;
     [SerializeField] private float _bottomLimit = -5f;
+
+    private bool _takingDamage;
     private Rigidbody2D _rigidbody;
     private float _horizontal;
     private float _halfWidth;
