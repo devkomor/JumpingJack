@@ -22,16 +22,21 @@ public class PlatfomMovement : Platform
     }
     private void Update()
     {
-            CheckBounds();
+        CheckBounds();
     }
 
     // METODOS
 
     private void Move()
     {
-        if (_isMovingVertical){ transform.Translate(Vector3.down * _moveSpeed * Time.deltaTime); }
-        //necesario para el futuro desarrollo
-        if (_isMovingHorizontal){}
+        if (_isMovingVertical)
+        {
+            transform.Translate(Vector3.down * _moveSpeed * Time.deltaTime);
+        }
+        if (_isMovingHorizontal)
+        {
+            transform.Translate(Vector3.Lerp(Vector3.left, Vector3.right, 0.5f) * _moveSpeed * Time.deltaTime);
+        }
     }
 
     private void CheckBounds()
