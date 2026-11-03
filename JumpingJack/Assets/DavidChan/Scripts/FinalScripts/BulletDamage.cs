@@ -1,0 +1,26 @@
+using UnityEngine;
+
+public class BulletDamage : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        StaticEnemy enemy = other.gameObject.GetComponent<StaticEnemy>();
+
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            enemy.DestroyEnemy();
+            Destroy(gameObject);
+        }
+    }
+}
