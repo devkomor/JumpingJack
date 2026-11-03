@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5637382201415513487}
   - component: {fileID: 4004866033799710214}
   - component: {fileID: 3553716056815847528}
-  - component: {fileID: -1992151531089747586}
   - component: {fileID: 5370062182142036127}
+  - component: {fileID: -1992151531089747586}
   m_Layer: 0
   m_Name: PlaformTestRoom
   m_TagString: Untagged
@@ -160,23 +160,6 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
---- !u!114 &-1992151531089747586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8376011348400053928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a81fae93f4746a4689f724beaa08115, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlatfomMovement
-  bounceForce: 12
-  _moveSpeed: 3
-  _isMovingHorizontal: 0
-  _isMovingVertical: 1
-  _lowerLimit: -6
 --- !u!68 &5370062182142036127
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -220,3 +203,20 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &-1992151531089747586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8376011348400053928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a81fae93f4746a4689f724beaa08115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlatfomMovement
+  _bounceForce: 12
+  _moveSpeed: 3
+  _isMovingHorizontal: 0
+  _isMovingVertical: 1
+  _lowerLimit: -6

@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 public class PlayerMovementPhone : MonoBehaviour
 {
     [SerializeField] private int _savePlatformsLeft = 5;
-    [SerializeField] private float _fireRate = 0.5f;
     [SerializeField] private float _jumpVelocity = 12f;
     [SerializeField] private float _tiltSpeed = 12f;
     [Tooltip("Velocidad de suavizado del movimiento vertical del personaje")]

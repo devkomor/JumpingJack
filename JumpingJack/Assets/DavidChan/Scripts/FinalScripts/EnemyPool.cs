@@ -27,7 +27,7 @@ public class EnemyPool : MonoBehaviour
     }
     void Start()
     {
-        Vector3 spawnPosition = new Vector3(1f, 1f, 1f);
+        Vector3 spawnPosition = new Vector3(4f, 4f, 4f);
         for(int i = 0; i < _poolSize; i++)
         {
             GameObject enemy = Instantiate(_enemyPrefab, spawnPosition, Quaternion.identity);

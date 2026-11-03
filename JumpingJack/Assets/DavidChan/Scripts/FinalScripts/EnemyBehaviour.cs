@@ -2,15 +2,8 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-    
-    void Start()
+    public virtual void RecycleToEnemyPool()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        EnemyPool.Instance.RecycleEnemy(this);
     }
 }

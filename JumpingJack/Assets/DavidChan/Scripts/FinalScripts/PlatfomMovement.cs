@@ -17,7 +17,7 @@ public class PlatfomMovement : Platform // Corregir la ortografía del nombre
     }
     private void Update()
     {
-            CheckBounds();
+        CheckBounds();
     }
 
     // METODOS
@@ -30,7 +30,7 @@ public class PlatfomMovement : Platform // Corregir la ortografía del nombre
         }
         if (_isMovingHorizontal)
         {
-            //Agregar logica de movimiento Izquierda y Derecha // Revisar si este código es necesario
+            transform.Translate(Vector3.Lerp(Vector3.left, Vector3.right, 0.5f) * _moveSpeed * Time.deltaTime);
         }
     }
 

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6669150970221258847}
   - component: {fileID: 18443443106019843}
   - component: {fileID: 743822364508371194}
+  - component: {fileID: 5132046379894537816}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -156,3 +157,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StaticEnemy
   _isAlive: 1
+--- !u!114 &5132046379894537816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8833599203307556728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6334b05e3eade3a4093ca504ef43495e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
+  _movementSpeed: 3
+  _isMovingHorizontal: 0
+  _isMovingVertical: 1
+  _lowerLimit: -6
