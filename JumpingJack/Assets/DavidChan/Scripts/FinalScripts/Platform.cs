@@ -7,8 +7,13 @@ public class Platform : MonoBehaviour
     {
         player.Jump(_bounceForce);
     }
-    public virtual void RecycleToPool()
+    public virtual void RecycleToPool(PlatformPool pool)
     {
-        PlatformPool.Instance.RecyclePlatform(this); // Revisar la inyección de dependencias
+        if (pool != null)
+        {
+            pool.RecyclePlatform(this);
+        }
+        ; // Revisar la inyección de dependencias
     }
+    
 }

@@ -3,14 +3,14 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform target; // Usar PascalCase
+    public Transform Target; 
 
     void LateUpdate ()
     {
-        if (target.position.y > transform.position.y)
+        if (Target.position.y > transform.position.y)
         {
-            Vector3 newPos = new Vector3(transform.position.x, target.position.y, transform.position.z); // Sin abreviaciones
-            transform.position = newPos;
+            Vector3 newPosition = new Vector3(transform.position.x, Target.position.y, transform.position.z); // Sin abreviaciones
+            transform.position = newPosition;
         }    
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created

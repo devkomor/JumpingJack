@@ -1,8 +1,6 @@
-// Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
-
 using UnityEngine;
 
-public class PlatfomMovement : Platform // Corregir la ortografía del nombre
+public class PlatfomMovement : Platform 
 {
     [SerializeField] private float _moveSpeed = 3f;
     [SerializeField] private bool _isMovingHorizontal = false;
@@ -10,6 +8,13 @@ public class PlatfomMovement : Platform // Corregir la ortografía del nombre
 
     [Header("Limites de pantalla")]
     [SerializeField] private float _lowerLimit = -6f;
+
+    private PlatformPool _pool;
+
+    public void SetPool(PlatformPool pool)
+    {
+        _pool = pool;
+    }
 
     private void FixedUpdate()
     {
@@ -38,7 +43,7 @@ public class PlatfomMovement : Platform // Corregir la ortografía del nombre
     {
         if (transform.position.y < _lowerLimit)
         {
-            RecycleToPool();
+            RecycleToPool(_pool);
         }
     }
 }
