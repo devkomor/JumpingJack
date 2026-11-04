@@ -8,13 +8,14 @@ using UnityEngine.SceneManagement;
 public class PlayerMovementPhone : MonoBehaviour
 {
     [SerializeField] private int _savePlatformsLeft = 5;
-    [SerializeField] private float _fireRate = 0.5f;
     [SerializeField] private float _jumpVelocity = 12f;
     [SerializeField] private float _tiltSpeed = 12f;
     [Tooltip("Velocidad de suavizado del movimiento vertical del personaje")]
     [SerializeField] private float _smoothing = 10f; // Aclarar el significado o las unidades con Tooltip
     [SerializeField] private float _topLimit = 5f;
     [SerializeField] private float _bottomLimit = -5f;
+
+    private bool _takingDamage;
     private Rigidbody2D _rigidbody;
     private float _horizontal;
     private float _halfWidth;
@@ -51,10 +52,6 @@ public class PlayerMovementPhone : MonoBehaviour
 #endif
         Move(target);
 
-        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) 
-        {
-            Shoot();
-        }
         if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame) 
         { 
             TrySpawnSavePlatform(); 
