@@ -23,6 +23,11 @@ public class StaticEnemy : MonoBehaviour
     {
         //ContactPoint contact = collision.contacts[GameObject.GetComponent<PlayerMovementPhone.Die()>];
         //El signo de ? sirve para verificar que la collision contra la que choque el objeto no sea nula
-        collision.gameObject.GetComponent<PlayerMovementPhone>()?.Die();
+        //collision.gameObject.GetComponent<PlayerMovementPhone>()?.Die();
+        PlayerMovementPhone player = collision.gameObject.GetComponent<PlayerMovementPhone>();
+
+        if (player == null) { return; }
+
+        player.TakeEnemyHit();
     }
 }
