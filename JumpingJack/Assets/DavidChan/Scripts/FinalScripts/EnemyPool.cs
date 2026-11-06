@@ -10,7 +10,7 @@ public class EnemyPool : MonoBehaviour
     [SerializeField] private float _levelWidth = 3.5f;
     [SerializeField] private float _minY = 0.2f;
     [SerializeField] private float _maxY = 3f;
-
+    private float _initialSpawnY = 6f;
     public static EnemyPool Instance { get { return instance; } }
     private static EnemyPool instance;
 
@@ -27,7 +27,7 @@ public class EnemyPool : MonoBehaviour
     }
     void Start()
     {
-        Vector3 spawnPosition = new Vector3(4f, 4f, 4f);
+        Vector3 spawnPosition = new Vector3(0f, _initialSpawnY, 0f);
         for(int i = 0; i < _poolSize; i++)
         {
             GameObject enemy = Instantiate(_enemyPrefab, spawnPosition, Quaternion.identity);
@@ -53,7 +53,7 @@ public class EnemyPool : MonoBehaviour
     }
     private float GetHighestEnemyY()
     {
-        float highestY = 0f;
+        float highestY = 8f;
         foreach(EnemyBehaviour enemy in _enemyList)
         {
             if(enemy.transform.position.y > highestY)

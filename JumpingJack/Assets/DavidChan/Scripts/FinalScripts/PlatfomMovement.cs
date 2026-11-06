@@ -43,7 +43,7 @@ public class PlatfomMovement : Platform
     {
         if (transform.position.y < _lowerLimit)
         {
-            RecycleToPool(_pool);
+            RecycleToPool();
         }
     }
 }

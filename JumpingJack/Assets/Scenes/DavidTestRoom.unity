@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyPool
   _enemyPrefab: {fileID: 8833599203307556728, guid: 326d73ca5988336468020dfdf9925b8d, type: 3}
-  _poolSize: 12
+  _poolSize: 3
   _enemyList: []
   _levelWidth: 3.5
   _minY: 0.2
