@@ -9,7 +9,7 @@ public class PlatfomMovement : Platform
     [Header("Limites de pantalla")]
     [SerializeField] private float _lowerLimit = -6f;
 
-    private PlatformPool _pool;
+    protected PlatformPool _pool;
 
     public void SetPool(PlatformPool pool)
     {
