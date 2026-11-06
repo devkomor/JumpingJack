@@ -40,11 +40,17 @@ public class PlatformPool : MonoBehaviour
 
     public void RecyclePlatform(Platform platformToRecycle)
     {
+        platformToRecycle.gameObject.SetActive(false);
+
         float highestY = GetHighestPlatformY();
 
         Vector3 newPosition = new Vector3(Random.Range(-_levelWidth, _levelWidth), highestY + Random.Range(_minY, _maxY),0f );
     
         platformToRecycle.transform.position = newPosition;
+
+        platformToRecycle.ResetPlatform();
+        
+        platformToRecycle.gameObject.SetActive(true);
     }
 
     private float GetHighestPlatformY()

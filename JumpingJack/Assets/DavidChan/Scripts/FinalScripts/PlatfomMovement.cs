@@ -41,9 +41,24 @@ public class PlatfomMovement : Platform
 
     private void CheckBounds()
     {
-        if (transform.position.y < _lowerLimit)
+        float dynamicLimit = Camera.main.transform.position.y + _lowerLimit;
+
+        if (transform.position.y < dynamicLimit)
         {
             RecycleToPool();
+        }
+    }
+    public override void RecycleToPool()
+    {
+        // Verifica si inyectaste un pool específico en esta plataforma
+        if (_pool != null)
+        {
+            _pool.RecyclePlatform(this);
+        }
+        else
+        {
+            // Si no hay pool local, usa el comportamiento por defecto de la clase base
+            base.RecycleToPool();
         }
     }
 }

@@ -10,6 +10,9 @@ public class Platform : MonoBehaviour
     public virtual void RecycleToPool()
     {
         PlatformPool.Instance.RecyclePlatform(this);
+    } 
+    public virtual void ResetPlatform()
+    {
+
     }
-    
 }

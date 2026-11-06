@@ -519,7 +519,7 @@ MonoBehaviour:
   _platformPrefab: {fileID: 8376011348400053928, guid: e3fd773cf0d71974a9ee4aa3295790a5, type: 3}
   _poolSize: 16
   _platformList: []
-  _levelWidth: 3.5
+  _levelWidth: 3
   _minY: 0.2
   _maxY: 3
 --- !u!4 &1406061936

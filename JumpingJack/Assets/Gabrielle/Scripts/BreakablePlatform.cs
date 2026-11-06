@@ -17,7 +17,7 @@ public class BreakablePlatform : PlatfomMovement
                 base.ApplyBounce(player);
                 if (_pool != null)
                 {
-                    RecycleToPool(_pool);
+                    RecycleToPool();
                 }
                 else
                 {

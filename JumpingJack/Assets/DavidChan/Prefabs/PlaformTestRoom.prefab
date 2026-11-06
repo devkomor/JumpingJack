@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4004866033799710214}
   - component: {fileID: 3553716056815847528}
   - component: {fileID: 5370062182142036127}
-  - component: {fileID: 8650677067256989135}
+  - component: {fileID: 3851391527549482555}
   m_Layer: 0
   m_Name: PlaformTestRoom
   m_TagString: Untagged
@@ -203,7 +203,7 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &8650677067256989135
+--- !u!114 &3851391527549482555
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -212,9 +212,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8376011348400053928}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 557daf55615ca9941af8f8edd6251c46, type: 3}
+  m_Script: {fileID: 11500000, guid: d91c97198961dd3439a9db87020abdfd, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BreakablePlatform
+  m_EditorClassIdentifier: Assembly-CSharp::BreakablePlatformTest
   _bounceForce: 12
   _moveSpeed: 3
   _isMovingHorizontal: 0
