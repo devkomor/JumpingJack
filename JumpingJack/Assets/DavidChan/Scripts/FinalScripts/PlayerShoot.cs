@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 public class PlayerShoot : MonoBehaviour
 {
     [Tooltip("Aqui va el prefab de la bala que se va a usar para el personaje")]
@@ -11,6 +11,11 @@ public class PlayerShoot : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            Shoot();
+        }
+        if (Pointer.current != null && Pointer.current.press.wasPressedThisFrame)
+        {
+            Vector2 posicionDelTap = Pointer.current.position.ReadValue();
             Shoot();
         }
     }
