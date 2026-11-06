@@ -15,15 +15,18 @@ public class PlayerMovementPhone : MonoBehaviour
     [SerializeField] private float _topLimit = 5f;
     [SerializeField] private float _bottomLimit = -5f;
 
+
     private bool _takingDamage;
     private Rigidbody2D _rigidbody;
     private float _horizontal;
     private float _halfWidth;
+    private PlayerShield _playerShield;
 
     void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _halfWidth = GetComponent<Collider2D>().bounds.extents.x;
+        _playerShield = GetComponent<PlayerShield>();
     }
 
     void OnEnable()
@@ -96,6 +99,14 @@ public class PlayerMovementPhone : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void TakeEnemyHit()
+    {
+        if (_playerShield.IsActive()) { return; }
+
+        Die();
+    }
+
     private float ReadAccelerometerInput()
     {
         

@@ -2,9 +2,16 @@ using UnityEngine;
 
 public class PowerUp : MonoBehaviour
 {
-    [SerializeField] protected float _duration = 5f; 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        PlayerMovementPhone player = other.GetComponent<PlayerMovementPhone>();
+        if (player == null) { return; }
 
-    //funcion pendiente hasata tener power up
+        player.ApplyPowerUp(this);
+        DestroyAfterCollect();
+    }
+
+    //Metodos
     public virtual void ApplyEffect(PlayerMovementPhone player)
     {
 
