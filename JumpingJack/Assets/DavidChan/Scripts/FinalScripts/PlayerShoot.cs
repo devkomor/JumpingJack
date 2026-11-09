@@ -1,3 +1,5 @@
+// Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerShoot : MonoBehaviour
@@ -15,7 +17,7 @@ public class PlayerShoot : MonoBehaviour
         }
         if (Pointer.current != null && Pointer.current.press.wasPressedThisFrame)
         {
-            Vector2 posicionDelTap = Pointer.current.position.ReadValue();
+            Vector2 posicionDelTap = Pointer.current.position.ReadValue(); // Usar inglés
             Shoot();
         }
     }
@@ -26,7 +28,7 @@ public class PlayerShoot : MonoBehaviour
 
     private void Shoot()
     {
-        GameObject tempBullet = Instantiate(_bulletPrefab, _shootPoint.position, _shootPoint.rotation);
+        GameObject tempBullet = Instantiate(_bulletPrefab, _shootPoint.position, _shootPoint.rotation); // Sin abreviaciones
         tempBullet.GetComponent<Rigidbody2D>().linearVelocity = _shootPoint.up * _bulletVelocity;
         Destroy(tempBullet, 1.5f);
     }

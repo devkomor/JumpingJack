@@ -11,9 +11,9 @@ public class PlatformPool : MonoBehaviour
     [SerializeField] private float _minY = 0.2f;
     [SerializeField] private float _maxY = 3f;
 
-    private static PlatformPool _instance; 
+    private static PlatformPool _instance;  // Respetar el orden de acceso y static
     public static PlatformPool Instance { get { return _instance; } }
-    private float InitialSpawnY = -4.2f;
+    private float InitialSpawnY = -4.2f; // Usar _camelCase | Respetar el orden de los miembros
 
     private void Awake()
     {

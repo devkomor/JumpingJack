@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MouseControl : MonoBehaviour
+public class MouseControl : MonoBehaviour // Revisar: el nombre del archivo debe coincidir con el de la clase
 {
     void Update()
     {

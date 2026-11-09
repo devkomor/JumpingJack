@@ -1,3 +1,5 @@
+// Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
+
 using UnityEngine;
 
 public class PlatfomMovement : Platform 
@@ -9,7 +11,7 @@ public class PlatfomMovement : Platform
     [Header("Limites de pantalla")]
     [SerializeField] private float _lowerLimit = -6f;
 
-    protected PlatformPool _pool;
+    protected PlatformPool _pool; // Respetar el orden de acceso y static
 
     public void SetPool(PlatformPool pool)
     {
@@ -48,7 +50,7 @@ public class PlatfomMovement : Platform
             RecycleToPool();
         }
     }
-    public override void RecycleToPool()
+    public override void RecycleToPool() // Respetar el orden de acceso y static
     {
         // Verifica si inyectaste un pool específico en esta plataforma
         if (_pool != null)

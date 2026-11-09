@@ -1,3 +1,5 @@
+// Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
+
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -8,15 +10,15 @@ public class EnemyPool : MonoBehaviour
     [SerializeField] private int _poolSize = 12;
     [SerializeField] private List<EnemyBehaviour> _enemyList = new List<EnemyBehaviour>();
     [SerializeField] private float _levelWidth = 3.5f;
-    [SerializeField] private float _minY = 0.2f;
-    [SerializeField] private float _maxY = 3f;
+    [SerializeField] private float _minY = 0.2f; // Sin abreviaciones
+    [SerializeField] private float _maxY = 3f; // Sin abreviaciones
     private float _initialSpawnY = 6f;
     public static EnemyPool Instance { get { return instance; } }
-    private static EnemyPool instance;
+    private static EnemyPool instance; // Usar _camelCase | Respetar el orden de los miembros | Respetar el orden de acceso y static
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
         }
@@ -28,13 +30,13 @@ public class EnemyPool : MonoBehaviour
     void Start()
     {
         Vector3 spawnPosition = new Vector3(0f, _initialSpawnY, 0f);
-        for(int i = 0; i < _poolSize; i++)
+        for (int i = 0; i < _poolSize; i++)
         {
             GameObject enemy = Instantiate(_enemyPrefab, spawnPosition, Quaternion.identity);
             enemy.SetActive(true);
 
             EnemyBehaviour enemyComponent = enemy.GetComponent<EnemyBehaviour>();
-            if(enemyComponent != null)
+            if (enemyComponent != null)
             {
                 _enemyList.Add(enemyComponent);
             }
@@ -54,9 +56,9 @@ public class EnemyPool : MonoBehaviour
     private float GetHighestEnemyY()
     {
         float highestY = 8f;
-        foreach(EnemyBehaviour enemy in _enemyList)
+        foreach (EnemyBehaviour enemy in _enemyList)
         {
-            if(enemy.transform.position.y > highestY)
+            if (enemy.transform.position.y > highestY)
             {
                 highestY = enemy.transform.position.y;
             }
