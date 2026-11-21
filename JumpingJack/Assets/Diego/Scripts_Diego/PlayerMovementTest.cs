@@ -6,7 +6,7 @@ using System.Collections.Generic;
 //[RequireComponent(typeof(Rigidbody2D))]
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float MovementSpeed = 5f;
+    [SerializeField] private float MovementSpeed = 5f; // Usar _camelCase
 
     private float _movementValue = 0f;
     private Rigidbody2D _playerRigidbody;
