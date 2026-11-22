@@ -1,3 +1,5 @@
+// Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
+
 using UnityEngine;
 
 public class BreakablePlatform : PlatfomMovement
@@ -17,7 +19,7 @@ public class BreakablePlatform : PlatfomMovement
                 base.ApplyBounce(player);
                 if (_pool != null)
                 {
-                    RecycleToPool(_pool);
+                    RecycleToPool();
                 }
                 else
                 {

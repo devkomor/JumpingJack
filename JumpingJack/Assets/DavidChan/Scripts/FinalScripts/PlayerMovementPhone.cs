@@ -1,5 +1,7 @@
 // Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
 
+// Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -16,7 +18,7 @@ public class PlayerMovementPhone : MonoBehaviour
     [SerializeField] private float _bottomLimit = -5f;
 
 
-    private bool _takingDamage;
+    private bool _takingDamage; // Revisar: usar un verbo de estado (is, has o can)
     private Rigidbody2D _rigidbody;
     private float _horizontal;
     private float _halfWidth;
@@ -160,7 +162,7 @@ public class PlayerMovementPhone : MonoBehaviour
     private void WrapAroundScreen()
     {
         var camera = Camera.main; // Usar el tipo explícito en lugar de var; Sin abreviaciones
-        float camHalfWidth = camera.orthographicSize * camera.aspect;
+        float camHalfWidth = camera.orthographicSize * camera.aspect; // Sin abreviaciones
         float playerPosition = transform.position.x; // Usar un nombre descriptivo
 
         if (playerPosition > camHalfWidth + _halfWidth)

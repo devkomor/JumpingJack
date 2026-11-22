@@ -218,9 +218,9 @@ MonoBehaviour:
   _enemyPrefab: {fileID: 8833599203307556728, guid: 326d73ca5988336468020dfdf9925b8d, type: 3}
   _poolSize: 3
   _enemyList: []
-  _levelWidth: 3.5
+  _levelWidth: 3
   _minY: 0.2
-  _maxY: 3
+  _maxY: 6
 --- !u!4 &307218233
 Transform:
   m_ObjectHideFlags: 0
@@ -519,7 +519,7 @@ MonoBehaviour:
   _platformPrefab: {fileID: 8376011348400053928, guid: e3fd773cf0d71974a9ee4aa3295790a5, type: 3}
   _poolSize: 16
   _platformList: []
-  _levelWidth: 3.5
+  _levelWidth: 3
   _minY: 0.2
   _maxY: 3
 --- !u!4 &1406061936
