@@ -9,18 +9,10 @@ public class Platform : MonoBehaviour
     }
     public virtual void RecycleToPool()
     {
-<<<<<<< Updated upstream
         PlatformPool.Instance.RecyclePlatform(this);
-    } 
+    }
     public virtual void ResetPlatform()
     {
 
-=======
-        if (pool != null)
-        {
-            pool.RecyclePlatform(this);
-        }
-        
->>>>>>> Stashed changes
     }
 }
