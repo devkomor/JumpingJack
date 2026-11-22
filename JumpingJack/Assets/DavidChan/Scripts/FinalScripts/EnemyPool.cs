@@ -6,21 +6,31 @@ using UnityEngine;
 
 public class EnemyPool : MonoBehaviour
 {
-    [SerializeField] private GameObject _enemyPrefab;
+    [Header("Prefabs de enemigos")]
+    [SerializeField] private GameObject _staticEnemyPrefab;
+    [SerializeField] private GameObject _movingEnemyPrefab;
+
+    [Header("Probabilidad de Aparición")]
+    [Tooltip("Porcentaje de probabilidad de que se genere un enemigo estático (0 a 100)")]
+    [Range(0f, 100f)]
+    [SerializeField] private float _staticEnemyChance = 70f;
+
+    [Header("Configuración de nivel")]
     [SerializeField] private int _poolSize = 12;
     [SerializeField] private List<EnemyBehaviour> _enemyList = new List<EnemyBehaviour>();
     [SerializeField] private float _levelWidth = 3.5f;
-    [SerializeField] private float _minY = 0.2f; // Sin abreviaciones
-    [SerializeField] private float _maxY = 3f; // Sin abreviaciones
+    [SerializeField] private float _minimumY = 0.2f; // Sin abreviaciones
+    [SerializeField] private float _maximumY = 3f; // Sin abreviaciones
+
     private float _initialSpawnY = 6f;
-    public static EnemyPool Instance { get { return instance; } }
-    private static EnemyPool instance; // Usar _camelCase | Respetar el orden de los miembros | Respetar el orden de acceso y static
+    private static EnemyPool _instance; // Usar _camelCase | Respetar el orden de los miembros | Respetar el orden de acceso y static
+    public static EnemyPool Instance { get { return _instance; } }
 
     private void Awake()
     {
-        if (instance == null)
+        if (_instance == null)
         {
-            instance = this;
+            _instance = this;
         }
         else
         {
@@ -30,9 +40,22 @@ public class EnemyPool : MonoBehaviour
     void Start()
     {
         Vector3 spawnPosition = new Vector3(0f, _initialSpawnY, 0f);
+
         for (int i = 0; i < _poolSize; i++)
         {
-            GameObject enemy = Instantiate(_enemyPrefab, spawnPosition, Quaternion.identity);
+            float randomRoll = Random.Range(0f, 100f);
+            GameObject selectedPrefab;
+
+            if (randomRoll < _staticEnemyChance)
+            {
+                selectedPrefab = _staticEnemyPrefab;
+            }
+            else
+            {
+                selectedPrefab = _movingEnemyPrefab;
+            }
+
+            GameObject enemy = Instantiate(selectedPrefab, spawnPosition, Quaternion.identity);
             enemy.SetActive(true);
 
             EnemyBehaviour enemyComponent = enemy.GetComponent<EnemyBehaviour>();
@@ -41,17 +64,19 @@ public class EnemyPool : MonoBehaviour
                 _enemyList.Add(enemyComponent);
             }
 
-            spawnPosition.y += Random.Range(_minY, _maxY);
+            spawnPosition.y += Random.Range(_minimumY, _maximumY);
             spawnPosition.x = Random.Range(-_levelWidth, _levelWidth);
-        }   
+        }
     }
 
     //Metodos
     public void RecycleEnemy(EnemyBehaviour enemyToRecycle)
     {
+        enemyToRecycle.gameObject.SetActive(false);
         float highestY = GetHighestEnemyY();
-        Vector3 newPosition = new Vector3(Random.Range(-_levelWidth, _levelWidth), highestY + Random.Range(_minY, _maxY), 0f);
+        Vector3 newPosition = new Vector3(Random.Range(-_levelWidth, _levelWidth), highestY + Random.Range(_minimumY, _maximumY), 0f);
         enemyToRecycle.transform.position = newPosition;
+        enemyToRecycle.gameObject.SetActive(true);
     }
     private float GetHighestEnemyY()
     {
