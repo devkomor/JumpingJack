@@ -1,3 +1,5 @@
+// Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
+
 using System;
 using UnityEngine;
 
@@ -8,6 +10,8 @@ public class EnemyMovement : EnemyBehaviour
     [SerializeField] private bool _isMovingVertical = true;
     [Header("Limites de pantalla")]
     [SerializeField] private float _lowerLimit = -6f;
+
+    private EnemyPool _enemyPool;
     
     private void FixedUpdate()
     {
@@ -35,7 +39,7 @@ public class EnemyMovement : EnemyBehaviour
     {
         if (transform.position.y < _lowerLimit)
         {
-            RecycleToEnemyPool();
+            EnemyPool.Instance.RecycleEnemy(this);
         }
     }
 }
