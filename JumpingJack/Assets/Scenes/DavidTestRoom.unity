@@ -522,8 +522,11 @@ MonoBehaviour:
   _poolSize: 16
   _platformList: []
   _levelWidth: 3
-  _minY: 0.2
-  _maxY: 3
+  _easyMinY: 0.5
+  _easyMaxY: 1.2
+  _hardMinY: 1.8
+  _hardMaxY: 3.2
+  _timeToMaxDifficulty: 90
 --- !u!4 &1406061936
 Transform:
   m_ObjectHideFlags: 0
@@ -568,7 +571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35726594671681b4290711af335602b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerUpPool
-  _powerUpPrefabs: []
+  _powerUpPrefabs:
+  - {fileID: 355575831724205882, guid: 8ef12c0555d3aad4ba1ed46f68f1740f, type: 3}
   _poolSize: 4
   _levelWidth: 3
   _minY: 12
