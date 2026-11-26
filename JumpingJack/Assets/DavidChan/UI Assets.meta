@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:JumpingJack/Assets/DavidChan/UI Assets.meta
 guid: 6b60bbcd41f07ea44a13ceea452d117d
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
+=======
+guid: be5193a757e2243bba3b41cf8e5d70d8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+>>>>>>> parent of 117727e (Merge branch 'Gabrielle' into Diego):JumpingJack/Assets/Gabrielle/Animations/ShieldPowerUp.controller.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 
