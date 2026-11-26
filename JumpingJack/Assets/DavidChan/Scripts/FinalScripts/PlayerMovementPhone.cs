@@ -23,6 +23,7 @@ public class PlayerMovementPhone : MonoBehaviour
     private float _horizontal;
     private float _halfWidth;
     private PlayerShield _playerShield;
+    private Animator _animator;
     public bool IsKnockedOut { get; private set; } = false;
 
     void Awake()
@@ -30,6 +31,7 @@ public class PlayerMovementPhone : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody2D>();
         _halfWidth = GetComponent<Collider2D>().bounds.extents.x;
         _playerShield = GetComponent<PlayerShield>();
+        _animator = GetComponent<Animator>();
     }
 
     void OnEnable()
@@ -58,7 +60,7 @@ public class PlayerMovementPhone : MonoBehaviour
 #if UNITY_ANDROID || UNITY_IOS
         target = ReadAccelerometerInput();
 #endif
-#if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN
+#if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN || UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX
         target = ReadKeyboardInput();
 #endif
         Move(target);
@@ -71,6 +73,8 @@ public class PlayerMovementPhone : MonoBehaviour
         WrapAroundScreen();
 
         CheckVerticalBounds();
+
+        _animator.SetFloat("VelocityY", _rigidbody.linearVelocity.y);
     }
 
     private float ReadKeyboardInput()
