@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:JumpingJack/Assets/TextMesh Pro/Examples & Extras/Materials/Crate - URP.mat.meta
+guid: 3b5cc91c3bf8cf74391252247f52fb59
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+=======
+guid: 939317d5759d643cbbb93dea815c6eb6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+>>>>>>> parent of 117727e (Merge branch 'Gabrielle' into Diego):JumpingJack/Assets/Gabrielle/Animations/Shield.anim.meta
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

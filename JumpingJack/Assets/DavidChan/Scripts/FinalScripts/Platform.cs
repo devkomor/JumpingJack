@@ -2,13 +2,17 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    [SerializeField] protected float bounceForce = 12f; // Usar _camelCase
+    [SerializeField] protected float _bounceForce = 12f; 
     public virtual void ApplyBounce(PlayerMovementPhone player)
     {
-        player.Jump(bounceForce);
+        player.Jump(_bounceForce);
     }
     public virtual void RecycleToPool()
     {
-        PlatformPool.Instance.RecyclePlatform(this); // Revisar la inyección de dependencias
+        PlatformPool.Instance.RecyclePlatform(this);
+    }
+    public virtual void ResetPlatform()
+    {
+
     }
 }

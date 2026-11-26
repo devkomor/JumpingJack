@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:JumpingJack/Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat.meta
+guid: 6522f30e342599e4e9dd4cc2cc03c830
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+=======
+guid: d2a2e7bdc043d4c2eb9cf48a677ed50a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+>>>>>>> parent of 117727e (Merge branch 'Gabrielle' into Diego):JumpingJack/Assets/Gabrielle/Animations/ShieldON.anim.meta
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

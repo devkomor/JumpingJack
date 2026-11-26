@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class PlayerwMouse : MonoBehaviour
+public class PlayerwMouse : MonoBehaviour // Sin abreviaciones
 {
-    [SerializeField] private float MovementSpeed = 5f;
+    [SerializeField] private float MovementSpeed = 5f; // Usar _camelCase
 
     private float _movementValue = 0f;
     private Rigidbody2D _playerRigidbody;
@@ -14,7 +14,7 @@ public class PlayerwMouse : MonoBehaviour
 
     void Update()
     {
-        float InputArrows = Input.GetAxis("Horizontal") * MovementSpeed;
+        float InputArrows = Input.GetAxis("Horizontal") * MovementSpeed; // Usar camelCase sin _
     }
 
     void FixedUpdate()
