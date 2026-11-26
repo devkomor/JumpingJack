@@ -12,9 +12,12 @@ public class PlayerShoot : MonoBehaviour
 
     private float _nextFireTime = 0f;
     private PlayerMovementPhone _playerMovement;
+    private Animator _animator;
+
     private void Awake()
     {
         _playerMovement = GetComponent<PlayerMovementPhone>();
+        _animator = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -38,6 +41,7 @@ public class PlayerShoot : MonoBehaviour
                 _nextFireTime = Time.time + _fireCooldown;
             }
         }
+
     }
 
     private void Shoot()
@@ -45,5 +49,7 @@ public class PlayerShoot : MonoBehaviour
         GameObject tempBullet = Instantiate(_bulletPrefab, _shootPoint.position, _shootPoint.rotation);
         tempBullet.GetComponent<Rigidbody2D>().linearVelocity = _shootPoint.up * _bulletVelocity;
         Destroy(tempBullet, 1.5f);
+        _animator.SetTrigger("Shoot");
+
     }
 }
