@@ -8,35 +8,42 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private Transform _shootPoint;
     [SerializeField] private float _bulletVelocity = 10f;
+    [SerializeField] private float _fireCooldown = 1.5f;
 
-    private void FixedUpdate()
+    private float _nextFireTime = 0f;
+    private PlayerMovementPhone _playerMovement;
+    private void Awake()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Shoot();
-        }
-        if (Pointer.current != null && Pointer.current.press.wasPressedThisFrame)
-        {
-            Vector2 posicionDelTap = Pointer.current.position.ReadValue(); // Usar inglés
-            Shoot();
-        }
+        _playerMovement = GetComponent<PlayerMovementPhone>();
     }
-    void Update()
+    private void Update()
     {
 
+        if (_playerMovement != null && _playerMovement.IsKnockedOut)
+        {
+            return;
+        }
+
+        if (Time.time >= _nextFireTime)
+        {
+            // Disparo con teclado
+            bool spacePressed = Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame;
+
+            // Disparo táctil o clic en pantalla
+            bool screenTapped = Pointer.current != null && Pointer.current.press.wasPressedThisFrame;
+
+            if (spacePressed || screenTapped)
+            {
+                Shoot();
+                _nextFireTime = Time.time + _fireCooldown;
+            }
+        }
     }
 
     private void Shoot()
     {
-        GameObject tempBullet = Instantiate(_bulletPrefab, _shootPoint.position, _shootPoint.rotation); // Sin abreviaciones
+        GameObject tempBullet = Instantiate(_bulletPrefab, _shootPoint.position, _shootPoint.rotation);
         tempBullet.GetComponent<Rigidbody2D>().linearVelocity = _shootPoint.up * _bulletVelocity;
         Destroy(tempBullet, 1.5f);
     }
-
-     // Logica del codigo original para disparar
-     // TODO implementar este codigo a la logica de "PlayerShoot"
-     //    if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) 
-     //    {
-     //    Shoot();
-     //    }
 }

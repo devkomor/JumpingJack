@@ -18,11 +18,12 @@ public class PlayerMovementPhone : MonoBehaviour
     [SerializeField] private float _bottomLimit = -5f;
 
 
-    private bool _takingDamage; // Revisar: usar un verbo de estado (is, has o can)
+    private bool _isKnockedOut = false; // Revisar: usar un verbo de estado (is, has o can)
     private Rigidbody2D _rigidbody;
     private float _horizontal;
     private float _halfWidth;
     private PlayerShield _playerShield;
+    public bool IsKnockedOut { get; private set; } = false;
 
     void Awake()
     {
@@ -47,6 +48,11 @@ public class PlayerMovementPhone : MonoBehaviour
 
     void Update()
     {
+        if (_isKnockedOut)
+        {
+            CheckVerticalBounds();
+            return;
+        }
         //https://docs.unity3d.com/520/Documentation/Manual/PlatformDependentCompilation.html
         float target = 0f;
 #if UNITY_ANDROID || UNITY_IOS
@@ -104,9 +110,22 @@ public class PlayerMovementPhone : MonoBehaviour
 
     public void TakeEnemyHit()
     {
-        if (_playerShield.IsActive()) { return; }
+        if (_playerShield != null && _playerShield.IsActive())
+        {
+            return;
+        }
 
-        Die();
+        if (_isKnockedOut)
+        {
+            return;
+        }
+        KnockOut();
+    }
+    public void KnockOut()
+    {
+        _isKnockedOut = true;
+        _horizontal = 0f;
+        _rigidbody.linearVelocity = new Vector2(0f, 6f);
     }
 
     private float ReadAccelerometerInput()
@@ -127,13 +146,6 @@ public class PlayerMovementPhone : MonoBehaviour
         _horizontal = Mathf.Lerp(_horizontal, input, Time.deltaTime * _smoothing);
     }
 
-    //TODO crear un script para la logica de disparo
-    private void Shoot() // Revisar si este código es necesario
-    {
-        //TODO Instancia de la clase Bullet segun el fireRate
-        Debug.Log("Mueran malditos comunistas!!!!");
-    }
-
     //TODO crear un script para la logica de spawneo de plataformas
     private void TrySpawnSavePlatform() // El método debe hacer lo que indica su nombre
     {
@@ -146,14 +158,17 @@ public class PlayerMovementPhone : MonoBehaviour
         }
     }
 
-
     private void OnCollisionEnter2D(Collision2D collision) // Respetar el orden de los miembros
     {
-        if (_rigidbody.linearVelocity.y <= 0.01f) // Revisar si se puede usar retorno temprano
+        if (_rigidbody.linearVelocity.y <= 0.01f)
         {
             Platform platform = collision.gameObject.GetComponent<Platform>();
             if (platform != null)
             {
+                if (IsKnockedOut)
+                {
+                    IsKnockedOut = false;
+                }
                 platform.ApplyBounce(this);
             }
         }
