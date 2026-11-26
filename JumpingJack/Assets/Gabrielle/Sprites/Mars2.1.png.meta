@@ -1,205 +1,205 @@
 fileFormatVersion: 2
-guid: 74f1dff0bdfcf594d9c650f56279ab10
+guid: ff7a87e69def84b1899e4c77e1715503
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2852769726718558800
-    second: Alien 2_0
+      213: 8743490006146073869
+    second: Mars2.1_0
   - first:
-      213: 2685896223885469255
-    second: Alien 2_1
+      213: 8957596422284480913
+    second: Mars2.1_1
   - first:
-      213: -3920948587160319280
-    second: Alien 2_2
+      213: -9071521021814213746
+    second: Mars2.1_2
   - first:
-      213: -8412248052326254762
-    second: Alien 2_3
+      213: -8273286834122410443
+    second: Mars2.1_3
   - first:
-      213: -1616733904648128687
-    second: Alien 2_4
+      213: 6693305779873499509
+    second: Mars2.1_4
   - first:
-      213: -1090575616866632579
-    second: Alien 2_5
+      213: -3506298468216659668
+    second: Mars2.1_5
   - first:
-      213: -7164831614453220248
-    second: Alien 2_6
+      213: 3736892280184263787
+    second: Mars2.1_6
   - first:
-      213: -6239728940523225152
-    second: Alien 2_7
+      213: -6126725846890584466
+    second: Mars2.1_7
   - first:
-      213: 2812260626625205722
-    second: Alien 2_8
+      213: -7757800522715230508
+    second: Mars2.1_8
   - first:
-      213: 1122692797613567484
-    second: Alien 2_9
+      213: 7359392335380834425
+    second: Mars2.1_9
   - first:
-      213: 3714069170171524041
-    second: Alien 2_10
+      213: -7994396625195243080
+    second: Mars2.1_10
   - first:
-      213: 7360702121397214029
-    second: Alien 2_11
+      213: -2893743432037532256
+    second: Mars2.1_11
   - first:
-      213: 6430844000073335709
-    second: Alien 2_12
+      213: 5456580345872135541
+    second: Mars2.1_12
   - first:
-      213: 5382257643955211425
-    second: Alien 2_13
+      213: -74627991587817563
+    second: Mars2.1_13
   - first:
-      213: 8723501290874114490
-    second: Alien 2_14
+      213: 7767802183205269028
+    second: Mars2.1_14
   - first:
-      213: 2501941066888912599
-    second: Alien 2_15
+      213: -481365087091330346
+    second: Mars2.1_15
   - first:
-      213: -5795008770632786439
-    second: Alien 2_16
+      213: 8737164024240333721
+    second: Mars2.1_16
   - first:
-      213: -5781721022384571473
-    second: Alien 2_17
+      213: -8009614868073700634
+    second: Mars2.1_17
   - first:
-      213: -4748901448941131788
-    second: Alien 2_18
+      213: -7078168697804097768
+    second: Mars2.1_18
   - first:
-      213: 1272930092516287543
-    second: Alien 2_19
+      213: 955325794825244221
+    second: Mars2.1_19
   - first:
-      213: -2340053907405825371
-    second: Alien 2_20
+      213: -5332324577958896348
+    second: Mars2.1_20
   - first:
-      213: -8545297966346603808
-    second: Alien 2_21
+      213: -2809994227082314653
+    second: Mars2.1_21
   - first:
-      213: -3043778986231157271
-    second: Alien 2_22
+      213: 2055479565517223011
+    second: Mars2.1_22
   - first:
-      213: 7096606470106576289
-    second: Alien 2_23
+      213: -422437416248148707
+    second: Mars2.1_23
   - first:
-      213: 7881567605591300297
-    second: Alien 2_24
+      213: 5949349983967039392
+    second: Mars2.1_24
   - first:
-      213: -1615750305655891490
-    second: Alien 2_25
+      213: -7877630717339628879
+    second: Mars2.1_25
   - first:
-      213: -2160483439373462060
-    second: Alien 2_26
+      213: -4463619062997596157
+    second: Mars2.1_26
   - first:
-      213: 6236055997795016223
-    second: Alien 2_27
+      213: -6670149102791349644
+    second: Mars2.1_27
   - first:
-      213: 1667515268774115742
-    second: Alien 2_28
+      213: -7757108250788293256
+    second: Mars2.1_28
   - first:
-      213: -2939803364401439703
-    second: Alien 2_29
+      213: -834947792135187647
+    second: Mars2.1_29
   - first:
-      213: 2069560257223954032
-    second: Alien 2_30
+      213: -4471328612185839388
+    second: Mars2.1_30
   - first:
-      213: 4396950209968076323
-    second: Alien 2_31
+      213: -1831142921655187261
+    second: Mars2.1_31
   - first:
-      213: -315047239638326367
-    second: Alien 2_32
+      213: -4711954460989727132
+    second: Mars2.1_32
   - first:
-      213: 1621418067613490103
-    second: Alien 2_33
+      213: 4736590265103143056
+    second: Mars2.1_33
   - first:
-      213: -3031692806135632849
-    second: Alien 2_34
+      213: 1700617900938657254
+    second: Mars2.1_34
   - first:
-      213: 2586251175726849349
-    second: Alien 2_35
+      213: -6080382830469629676
+    second: Mars2.1_35
   - first:
-      213: 2735854156841460223
-    second: Alien 2_36
+      213: -1050288518554746897
+    second: Mars2.1_36
   - first:
-      213: -5386055352972270479
-    second: Alien 2_37
+      213: 2524201532121995007
+    second: Mars2.1_37
   - first:
-      213: 8662028586305873837
-    second: Alien 2_38
+      213: 6531872463609230443
+    second: Mars2.1_38
   - first:
-      213: -854811296705196870
-    second: Alien 2_39
+      213: 3621583400266493287
+    second: Mars2.1_39
   - first:
-      213: -4982486555319903676
-    second: Alien 2_40
+      213: -1733424460177617331
+    second: Mars2.1_40
   - first:
-      213: 3968449977633655881
-    second: Alien 2_41
+      213: 2215935115808146819
+    second: Mars2.1_41
   - first:
-      213: 4071238772846260529
-    second: Alien 2_42
+      213: -2575554778289615154
+    second: Mars2.1_42
   - first:
-      213: -5744508062974172045
-    second: Alien 2_43
+      213: -6878893151416049699
+    second: Mars2.1_43
   - first:
-      213: 8961579109315637762
-    second: Alien 2_44
+      213: -8819617174697028496
+    second: Mars2.1_44
   - first:
-      213: 5252758923241246412
-    second: Alien 2_45
+      213: 3092286146298610922
+    second: Mars2.1_45
   - first:
-      213: -7629667678658845915
-    second: Alien 2_46
+      213: -8307988444559440851
+    second: Mars2.1_46
   - first:
-      213: 7164500673084243079
-    second: Alien 2_47
+      213: -4211355452968823952
+    second: Mars2.1_47
   - first:
-      213: -2528709692846252657
-    second: Alien 2_48
+      213: 2526702730734077799
+    second: Mars2.1_48
   - first:
-      213: -184167943638560194
-    second: Alien 2_49
+      213: 1513103381534214281
+    second: Mars2.1_49
   - first:
-      213: 8390396440765045241
-    second: Alien 2_50
+      213: -476165422367869774
+    second: Mars2.1_50
   - first:
-      213: 6198034692641410891
-    second: Alien 2_51
+      213: -6803013427089928834
+    second: Mars2.1_51
   - first:
-      213: -5227309551021286494
-    second: Alien 2_52
+      213: 5642741037384625205
+    second: Mars2.1_52
   - first:
-      213: -1883577849793118607
-    second: Alien 2_53
+      213: -8253075000166748959
+    second: Mars2.1_53
   - first:
-      213: -3563407075020664396
-    second: Alien 2_54
+      213: -8073989335901414992
+    second: Mars2.1_54
   - first:
-      213: 5048987605417261747
-    second: Alien 2_55
+      213: 2528944532323377744
+    second: Mars2.1_55
   - first:
-      213: 6901642236822146799
-    second: Alien 2_56
+      213: -1781228203110152236
+    second: Mars2.1_56
   - first:
-      213: 1295962980539663844
-    second: Alien 2_57
+      213: -1801153363510186557
+    second: Mars2.1_57
   - first:
-      213: 5711815244744671002
-    second: Alien 2_58
+      213: 4295965198945002341
+    second: Mars2.1_58
   - first:
-      213: 4371733860849538563
-    second: Alien 2_59
+      213: 1791305046873605454
+    second: Mars2.1_59
   - first:
-      213: -9061970698518155858
-    second: Alien 2_60
+      213: -2664131951392840657
+    second: Mars2.1_60
   - first:
-      213: 2637473598118057947
-    second: Alien 2_61
+      213: 8889879946028624754
+    second: Mars2.1_61
   - first:
-      213: -1192430812286208892
-    second: Alien 2_62
+      213: -753466149289417412
+    second: Mars2.1_62
   - first:
-      213: 5810859301675011444
-    second: Alien 2_63
+      213: -560826405208141351
+    second: Mars2.1_63
   - first:
-      213: 6919968894939898455
-    second: Alien 2_64
+      213: 2477592627060090037
+    second: Mars2.1_64
   - first:
-      213: 1823619521990938850
-    second: Alien 2_65
+      213: 2897933565859392887
+    second: Mars2.1_65
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -243,7 +243,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -270,7 +270,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -291,17 +291,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Alien 2_0
+      name: Mars2.1_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 74
         y: 1920
-        width: 528
-        height: 480
+        width: 368
+        height: 450
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,19 +336,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0bdb3f45c0de868d0800000000000000
-      internalID: -2852769726718558800
+      spriteID: d05c389e5dd175970800000000000000
+      internalID: 8743490006146073869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_1
+      name: Mars2.1_1
       rect:
         serializedVersion: 2
-        x: 528
+        x: 598
         y: 1920
-        width: 528
+        width: 382
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -332,19 +358,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 746a1489268364520800000000000000
-      internalID: 2685896223885469255
+      spriteID: 19193979c76cf4c70800000000000000
+      internalID: 8957596422284480913
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_2
+      name: Mars2.1_2
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 1122
         y: 1920
-        width: 528
+        width: 378
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -354,19 +380,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0da4db7b80ef599c0800000000000000
-      internalID: -3920948587160319280
+      spriteID: e83764291bb7b1280800000000000000
+      internalID: -9071521021814213746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_3
+      name: Mars2.1_3
       rect:
         serializedVersion: 2
-        x: 1584
+        x: 1648
         y: 1920
-        width: 528
+        width: 375
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -376,19 +402,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6573f9667f0b14b80800000000000000
-      internalID: -8412248052326254762
+      spriteID: 536b73745716f2d80800000000000000
+      internalID: -8273286834122410443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_4
+      name: Mars2.1_4
       rect:
         serializedVersion: 2
-        x: 2112
+        x: 2172
         y: 1920
-        width: 528
+        width: 375
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -398,20 +424,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1573e1d54153099e0800000000000000
-      internalID: -1616733904648128687
+      spriteID: 579cd66e42663ec50800000000000000
+      internalID: 6693305779873499509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_5
+      name: Mars2.1_5
       rect:
         serializedVersion: 2
-        x: 0
+        x: 76
         y: 1440
-        width: 528
-        height: 480
+        width: 362
+        height: 438
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -420,20 +446,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d7c36fb214f7dd0f0800000000000000
-      internalID: -1090575616866632579
+      spriteID: c21237dce10275fc0800000000000000
+      internalID: -3506298468216659668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_6
+      name: Mars2.1_6
       rect:
         serializedVersion: 2
-        x: 528
+        x: 605
         y: 1440
-        width: 528
-        height: 480
+        width: 347
+        height: 440
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -442,19 +468,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 86cf6098b97619c90800000000000000
-      internalID: -7164831614453220248
+      spriteID: b64584cdabb1cd330800000000000000
+      internalID: 3736892280184263787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_7
+      name: Mars2.1_7
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 1129
         y: 1440
-        width: 528
+        width: 347
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -464,19 +490,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0cf736d86970869a0800000000000000
-      internalID: -6239728940523225152
+      spriteID: e66e1e39d4f79faa0800000000000000
+      internalID: -6126725846890584466
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_8
+      name: Mars2.1_8
       rect:
         serializedVersion: 2
-        x: 1584
+        x: 1664
         y: 1440
-        width: 528
+        width: 360
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -486,19 +512,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ad510d1d328270720800000000000000
-      internalID: 2812260626625205722
+      spriteID: 4de0835f681c65490800000000000000
+      internalID: -7757800522715230508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_9
+      name: Mars2.1_9
       rect:
         serializedVersion: 2
-        x: 2112
+        x: 2173
         y: 1440
-        width: 528
+        width: 383
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -508,19 +534,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cfd65a1b62b949f00800000000000000
-      internalID: 1122692797613567484
+      spriteID: 9786b195650d12660800000000000000
+      internalID: 7359392335380834425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_10
+      name: Mars2.1_10
       rect:
         serializedVersion: 2
-        x: 0
+        x: 80
         y: 960
-        width: 528
+        width: 345
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -530,19 +556,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c3bd477b360b8330800000000000000
-      internalID: 3714069170171524041
+      spriteID: 8b9e7a120a23e0190800000000000000
+      internalID: -7994396625195243080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_11
+      name: Mars2.1_11
       rect:
         serializedVersion: 2
-        x: 528
+        x: 589
         y: 960
-        width: 528
+        width: 372
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -552,19 +578,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d4b585ba497762660800000000000000
-      internalID: 7360702121397214029
+      spriteID: 0ad78462eab57d7d0800000000000000
+      internalID: -2893743432037532256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_12
+      name: Mars2.1_12
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 1124
         y: 960
-        width: 528
+        width: 372
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -574,19 +600,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d93c256cb82fe3950800000000000000
-      internalID: 6430844000073335709
+      spriteID: 57536141aeaa9bb40800000000000000
+      internalID: 5456580345872135541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_13
+      name: Mars2.1_13
       rect:
         serializedVersion: 2
-        x: 1584
+        x: 1658
         y: 960
-        width: 528
+        width: 362
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -596,19 +622,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1acc49d8fce91ba40800000000000000
-      internalID: 5382257643955211425
+      spriteID: 5a77b1fac3ed6fef0800000000000000
+      internalID: -74627991587817563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_14
+      name: Mars2.1_14
       rect:
         serializedVersion: 2
-        x: 2112
+        x: 2186
         y: 960
-        width: 528
+        width: 355
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -618,19 +644,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab19638743a101970800000000000000
-      internalID: 8723501290874114490
+      spriteID: 42e24771ee6cccb60800000000000000
+      internalID: 7767802183205269028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_15
+      name: Mars2.1_15
       rect:
         serializedVersion: 2
-        x: 0
+        x: 77
         y: 480
-        width: 528
+        width: 362
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -640,19 +666,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7de10ecf42ea8b220800000000000000
-      internalID: 2501941066888912599
+      spriteID: 6d275a0f009d159f0800000000000000
+      internalID: -481365087091330346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_16
+      name: Mars2.1_16
       rect:
         serializedVersion: 2
-        x: 528
+        x: 592
         y: 480
-        width: 528
+        width: 365
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -662,19 +688,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9fdd824f93ef39fa0800000000000000
-      internalID: -5795008770632786439
+      spriteID: 993ea297364a04970800000000000000
+      internalID: 8737164024240333721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_17
+      name: Mars2.1_17
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 1138
         y: 480
-        width: 528
+        width: 341
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -684,19 +710,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fabfb5eec5333cfa0800000000000000
-      internalID: -5781721022384571473
+      spriteID: 6e2a7c8d6b128d090800000000000000
+      internalID: -8009614868073700634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_18
+      name: Mars2.1_18
       rect:
         serializedVersion: 2
-        x: 1584
+        x: 1657
         y: 480
-        width: 528
+        width: 352
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -706,19 +732,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4f7a68efa43881eb0800000000000000
-      internalID: -4748901448941131788
+      spriteID: 817f813321b45cd90800000000000000
+      internalID: -7078168697804097768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_19
+      name: Mars2.1_19
       rect:
         serializedVersion: 2
-        x: 2112
-        y: 480
-        width: 528
+        x: 2153
+        y: 483
+        width: 443
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -728,19 +754,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 734a654cc2b5aa110800000000000000
-      internalID: 1272930092516287543
+      spriteID: d3e8355bfbff14d00800000000000000
+      internalID: 955325794825244221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_20
+      name: Mars2.1_20
       rect:
         serializedVersion: 2
-        x: 0
+        x: 77
         y: 0
-        width: 528
+        width: 362
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -750,19 +776,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5aa9fcd8e55768fd0800000000000000
-      internalID: -2340053907405825371
+      spriteID: 42ddca75c07cff5b0800000000000000
+      internalID: -5332324577958896348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_21
+      name: Mars2.1_21
       rect:
         serializedVersion: 2
-        x: 528
+        x: 582
         y: 0
-        width: 528
+        width: 375
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -772,19 +798,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0e2fa0846c0096980800000000000000
-      internalID: -8545297966346603808
+      spriteID: 36c3cd17325e009d0800000000000000
+      internalID: -2809994227082314653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_22
+      name: Mars2.1_22
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 1125
         y: 0
-        width: 528
+        width: 382
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -794,19 +820,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9eda4ee732352c5d0800000000000000
-      internalID: -3043778986231157271
+      spriteID: 3647ab146c7868c10800000000000000
+      internalID: 2055479565517223011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_23
+      name: Mars2.1_23
       rect:
         serializedVersion: 2
-        x: 1584
+        x: 1660
         y: 0
-        width: 528
+        width: 369
         height: 480
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -816,20 +842,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a5f0713cf53c7260800000000000000
-      internalID: 7096606470106576289
+      spriteID: d1df1b87863332af0800000000000000
+      internalID: -422437416248148707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alien 2_24
+      name: Mars2.1_24
       rect:
         serializedVersion: 2
-        x: 2112
-        y: 0
-        width: 528
-        height: 480
+        x: 2189
+        y: 14
+        width: 365
+        height: 405
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -838,8 +864,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c8de7c9af3f06d60800000000000000
-      internalID: 7881567605591300297
+      spriteID: 0afc4d61a46509250800000000000000
+      internalID: 5949349983967039392
       vertices: []
       indices: 
       edges: []
@@ -848,7 +874,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9e85c4d374f691c4d8b5024a338f7ae7
+    spriteID: aa4dd1a858b86405392a99ad41b68533
     internalID: 0
     vertices: []
     indices: 
@@ -860,31 +886,31 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":5.0},"gridSpriteSize":{"x":528.0,"y":480.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Alien 2_0: -2852769726718558800
-      Alien 2_1: 2685896223885469255
-      Alien 2_10: 3714069170171524041
-      Alien 2_11: 7360702121397214029
-      Alien 2_12: 6430844000073335709
-      Alien 2_13: 5382257643955211425
-      Alien 2_14: 8723501290874114490
-      Alien 2_15: 2501941066888912599
-      Alien 2_16: -5795008770632786439
-      Alien 2_17: -5781721022384571473
-      Alien 2_18: -4748901448941131788
-      Alien 2_19: 1272930092516287543
-      Alien 2_2: -3920948587160319280
-      Alien 2_20: -2340053907405825371
-      Alien 2_21: -8545297966346603808
-      Alien 2_22: -3043778986231157271
-      Alien 2_23: 7096606470106576289
-      Alien 2_24: 7881567605591300297
-      Alien 2_3: -8412248052326254762
-      Alien 2_4: -1616733904648128687
-      Alien 2_5: -1090575616866632579
-      Alien 2_6: -7164831614453220248
-      Alien 2_7: -6239728940523225152
-      Alien 2_8: 2812260626625205722
-      Alien 2_9: 1122692797613567484
+      Mars2.1_0: 8743490006146073869
+      Mars2.1_1: 8957596422284480913
+      Mars2.1_10: -7994396625195243080
+      Mars2.1_11: -2893743432037532256
+      Mars2.1_12: 5456580345872135541
+      Mars2.1_13: -74627991587817563
+      Mars2.1_14: 7767802183205269028
+      Mars2.1_15: -481365087091330346
+      Mars2.1_16: 8737164024240333721
+      Mars2.1_17: -8009614868073700634
+      Mars2.1_18: -7078168697804097768
+      Mars2.1_19: 955325794825244221
+      Mars2.1_2: -9071521021814213746
+      Mars2.1_20: -5332324577958896348
+      Mars2.1_21: -2809994227082314653
+      Mars2.1_22: 2055479565517223011
+      Mars2.1_23: -422437416248148707
+      Mars2.1_24: 5949349983967039392
+      Mars2.1_3: -8273286834122410443
+      Mars2.1_4: 6693305779873499509
+      Mars2.1_5: -3506298468216659668
+      Mars2.1_6: 3736892280184263787
+      Mars2.1_7: -6126725846890584466
+      Mars2.1_8: -7757800522715230508
+      Mars2.1_9: 7359392335380834425
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
